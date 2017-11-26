@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Genre extends Model
 {
-    protected $table    = 'genre';
+    protected $table    = 'genres';
     
     protected $fillable = [
-
+    	'film_id','name'
     ];
 }

@@ -19,16 +19,19 @@ class GenresTableSeeder extends Seeder
         DB::table('genres')->insert([
             'film_id' => $wonderWomanId,
             'name' => 'Science Fiction',
+            'created_at' => date("Y-m-d H:i:s"),
         ]);
 
         DB::table('genres')->insert([
             'film_id' => $deadPoolId,
             'name' => 'Fantasy',
+            'created_at' => date("Y-m-d H:i:s"),
         ]);
 
         DB::table('genres')->insert([
             'film_id' => $justiceLeaugeId,
             'name' => 'Science Fiction',
+            'created_at' => date("Y-m-d H:i:s"),
         ]);
     }
 }

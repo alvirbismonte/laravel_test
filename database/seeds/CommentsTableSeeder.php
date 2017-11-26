@@ -21,18 +21,21 @@ class CommentsTableSeeder extends Seeder
             'film_id' => $wonderWomanId,
             'user_id' => User::all()->random()->id,
             'body' => 'Gal Gadot rocks!',
+            'created_at' => date("Y-m-d H:i:s"),
         ]);
 
         DB::table('comments')->insert([
             'film_id' => $deadPoolId,
             'user_id' => User::all()->random()->id,
             'body' => 'Deadpool kill them all!',
+            'created_at' => date("Y-m-d H:i:s"),
         ]);
 
         DB::table('comments')->insert([
             'film_id' => $justiceLeaugeId,
             'user_id' => User::all()->random()->id,
             'body' => 'Superman lives!',
+            'created_at' => date("Y-m-d H:i:s"),
         ]);
     }
 }
